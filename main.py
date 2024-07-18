@@ -23,7 +23,7 @@ def main() -> None:
         current_time = datetime.now()
         delta = current_time - modified
         update = delta <= timedelta(hours=24)
-        if file.endswith(".xlsx") and update == True:
+        if file.endswith(".xlsx") and True == update:
             file_src_dir = os.path.join(src_dir, file)
             new_file_name = 'manual_' + today + "_" + file
             file_dest_dir = os.path.join(dest_dir, new_file_name)
